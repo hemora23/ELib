@@ -1,0 +1,10 @@
+<?php
+if(empty($_SESSION['SES_ADMIN'])) {
+	echo "<div class='panel-body'><div class='alert alert-warning ' align='center'>";
+	echo "<b>Maaf Anda Bukan Admin !</b> <br>
+		  Silahkan masukkan Data Login Anda dengan benar untuk bisa mengakses aplikasi ini.";
+	echo "</div>";
+	include_once "login.php";
+	exit;
+}
+?>
